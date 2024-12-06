@@ -1,11 +1,98 @@
 /* Schrijf hier de verschillende stijlen, die gedeeld gaan
    worden door jullie projecten */
+:root{
+    color-scheme: light dark;
+  
+    --light: #F9FAFF;
+    --light-code: tomato;
+    --light-button: #1F485F;
+    --light-primary-button:#113974;
+    --light-hover-button:#000000;
+    --light-hover-button-text:#ffffff;
+    --light-form-field:#ffffff;
+  
+    --dark: #113974;
+    --dark-code: gold;
+    --dark-button: #E6EFF6;
+    --dark-primary-button:#F9FAFF;
+    --dark-hover-button:#ffffff;
+    --dark-hover-button-text:#000000;
+
+    --accent-color-light: #E6EFF6;
+    --accent-color-darkblue: #1F485F;
+    --main-white-light:#F9FAFF;    
+    --main-black-dark:#113974;
 
 
-/* Kleuren */
-.color-example {
-    background-color: #bada55;
 }
+
+* {
+    background-color: light-dark(var(--light), var(--dark)); 
+    color: light-dark(var(--dark), var(--light));
+    font-family: "Rubik", sans-serif;
+    font-optical-sizing: auto;
+    font-weight: 400;
+    font-style: normal;
+    margin: 0.7em;
+}
+/* Kleuren */
+.main-color-light{
+    background-color: #F9FAFF;
+}
+
+.main-color-dark{
+    background-color: #113974;
+}
+
+.accent-color-light{
+    background-color: #E6EFF6;
+}
+
+.accent-color-dark{
+    background-color: #1F485F;
+}
+
+
+/* Button */
+a{
+    border-radius: 1em;
+}
+
+.button{
+    background-color: light-dark(var(--light-button), var(--dark-button));
+    color: light-dark(var(--light), var(--dark));
+    border-color: light-dark(var(--light-button), var(--dark-button));
+    
+    &:hover{
+        background-color: light-dark(var(--light-hover-button), var(--dark-hover-button));
+        color: light-dark(var(--light-hover-button-text), var(--dark-hover-button-text));
+        text-decoration: none;
+    }  
+}
+
+
+.primary-button{
+    background-color:light-dark(var(--light-primary-button), var(--dark-primary-button)); 
+    color: light-dark(var(--light), var(--dark));
+
+    &:hover{
+        background-color: light-dark(var(--light-hover-button), var(--dark-hover-button));
+        color: light-dark(var(--light-hover-button-text), var(--dark-hover-button-text));
+        text-decoration: none;
+    }  
+}
+
+.filter-button{
+    background-color:light-dark(var(--light-primary-button), var(--dark-primary-button)); 
+    color: light-dark(var(--light), var(--dark));
+
+    &:hover{
+        background-color: light-dark(var(--light-hover-button), var(--dark-hover-button));
+        color: light-dark(var(--light-hover-button-text), var(--dark-hover-button-text));
+        text-decoration: none;
+    } 
+}
+
 
 /* Typografie */
 

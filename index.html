@@ -1,29 +1,29 @@
-
 <!DOCTYPE html>
 <html lang="nl">
   <head>
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>[Projectnaam] - Styleguide</title>
-    <link rel="stylesheet" href="index.css">
-    <link rel="stylesheet" href="projectnaam.css">
+    <title>Qatar museums - Styleguide</title>
+    <link rel="stylesheet" href="styles/index.css">
+    <link rel="stylesheet" href="styles/styles.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Rubik:wght@300..900&display=swap" rel="stylesheet">
   </head>
   <body>
 
     <header>
-      <h1>I love Web - Styleguide</h1>
-      <p>Dit is de styleguide voor mijn I love web. Hierin zijn een aantal huisstijl onderdelen gedefinieerd.</p>
-      <p>Gebruik de volgende gedeelde stylesheet binnen je eigen project:
-        <!-- Pas deze aan zodra deze repository live staat op GitHub Pages -->
+      <h1>I love web- Suleyman Huzeyfe Gokgul - Styleguide</h1>
+      <p>Dit is de styleguide voor mijn I love web, hierin zit de styling van mijn website</p>
+      <p>Deze links is voor het koppelen van de stylesheet aan mijn project.
         <code>&lt;link rel=&quot;stylesheet&quot; href=&quot;https://suleymanhg.github.io/i-love-web-styleguide/styles/style.css&quot;&gt;</code>
       </p>
     </header>
 
     <nav>
-      <a href="#kleur">Kleuren</a>
-      <a href="#typografie">Typografie</a>
-      <a href="#formulieren">Formulier elementen</a>
-      <!-- En eventueel meer categorieën -->
+      <a href="#kleur" class="button">Kleuren</a>
+      <a href="#typografie" class="primary-button">Typografie</a>
+      <a href="#formulieren" class="filter-button">Formulier elementen</a>
     </nav>
 
 
@@ -33,22 +33,21 @@
       <p>Bij het onderdeel kleuren staat het kleurgebruik.</p>
 
       <figure>
-        <code class="">#333333</code>
+        <code class="main-color-light">#F9FAFF</code>
         <figcaption>Kleur 1</figcaption>
       </figure>
       <figure>
-        <code class="">#666666</code>
+        <code class="main-color-dark">#113974</code>
         <figcaption>Kleur 2</figcaption>
       </figure>
       <figure>
-        <code class="">#999999</code>
+        <code class="accent-color-light">#E6EFF6</code> 
         <figcaption>Kleur 3</figcaption>
       </figure>
       <figure>
-        <code class="color-example">#bada55</code>
-        <figcaption>Etc</figcaption>
+        <code class="accent-color-dark">#1F485F</code>
+        <figcaption>Kleur 4</figcaption>
       </figure>
-
     </section>
 
 
@@ -143,17 +142,17 @@
         <fieldset class="">
           <legend class="">Radio options:</legend>
 
-          <label class="">
+          <label class="labelradio">
             <input type="radio" name="radio-options" value="option 1" checked class="">
             Option 1
           </label>
 
-          <label class="">
+          <label class="labelradio">
             <input type="radio" name="radio-options" value="option 2" class="">
             Option 2
           </label>
 
-          <label class="">
+          <label class="labelradio">
             <input type="radio" name="radio-options" value="option 3" class="">
             Option 3
           </label>
@@ -199,6 +198,8 @@
       </form>
     
     </section>
+
+    
 
 
     <!-- En eventueel meer categorieën -->
