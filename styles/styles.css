@@ -96,5 +96,11 @@ a{
 
 /* Typografie */
 
+h1{
+    background-color: var(--light)
+}
 
+p{
+    background-color: var(--light);
+}
 /* Formulier elementen */
